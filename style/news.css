@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section,main {
+    background-color: #162831;
+    
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+header, header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    
+
+}
+header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.logo {
+    cursor: pointer;
+
+    border-radius: 100%;
+}
+.logo:hover {
+    box-shadow: 0 0 7px #fff;
+}
+nav {
+    font-family: 'Proxima Nova', Courier, monospace,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+}
+nav ul li {
+    list-style-type: none;
+    color: #fff;
+    margin: 0 40px;
+    cursor: pointer;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover {
+    text-shadow: 0 0 5px #fff;
+}
+header button {
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-family:  'Proxima Nova', Courier, monospace,sans-serif;
+    color: #fff;
+    font-size: 16px;
+    background-color: #018ABE;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+header button:hover {
+    border: 1px solid #fff;
+    padding: 14px 19px;
+}
+.welcome {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 140%;
+    color: #fff;
+}
+.welcome img {
+    margin: 0 40px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-gap: 25px;
+    padding-bottom: 50px;
+}
+.grid div {
+    background-image: url(../img/under.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    filter: brightness(80%);
+    cursor: pointer;
+}
+.grid div:hover {
+    filter: brightness(100%);
+}
+.grid div p {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+.grid div h2 {
+    position: absolute;
+    left: 30px;
+    background: #018ABE;
+    top: 35px;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 135%;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 17px;
+}

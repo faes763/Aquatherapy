@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    background-color: #162831;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+header, header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+.logo {
+    cursor: pointer;
+
+    border-radius: 100%;
+}
+.logo:hover {
+    box-shadow: 0 0 7px #fff;
+}
+nav {
+    font-family: 'Proxima Nova', Courier, monospace,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+}
+nav ul li {
+    list-style-type: none;
+    color: #fff;
+    margin: 0 40px;
+    cursor: pointer;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover {
+    text-shadow: 0 0 5px #fff;
+}
+header button {
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-family:  'Proxima Nova', Courier, monospace,sans-serif;
+    color: #fff;
+    font-size: 16px;
+    background-color: #018ABE;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+header button:hover {
+    border: 1px solid #fff;
+    padding: 14px 19px;
+}
+.back {
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 10px;
+    height: 600px;
+}
+.back p, .back h1 {
+    font-family: 'El Messiri', Courier, monospace,sans-serif;
+    max-width: 400px;
+    color: white;
+    margin: 0 auto;
+    font-style: normal;
+    line-height: 140%;
+    text-align: center;
+}
+.back h1 {
+    padding-top: 35px;
+    font-size: 64px;
+}
+.back p {
+    font-size: 24px;
+    padding-top: 130px;
+}
+.back p img {
+    margin: 0 20px;
+}
+.welcome {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 140%;
+    color: #fff;
+}
+.welcome img {
+    margin: 0 40px;
+}
+.session-content {
+    display: grid;
+    grid-template-areas: "standard pair why"
+                         "standard dive underwater";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-gap: 25px;
+}
+.session-content div {
+    cursor: pointer;
+    position: relative;
+    filter: brightness(80%);
+    background-image: url(../img/pool.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    border-radius: 15px;
+}
+.session-content div:hover {
+    filter: brightness(100%);
+
+}
+.session-content div p {
+    position: absolute;
+    left: 5%;
+    max-width: 300px;
+    text-align: left;
+    bottom: 30px;
+    font-family: 'El Messiri';
+    color: #fff;
+    font-size: 24px;
+}
+.session-content div:nth-child(1) {
+    grid-area: standard;
+}
+.session-content div:nth-child(2) {
+    grid-area: pair;
+}
+.session-content div:nth-child(3) {
+    grid-area: dive;
+}
+.session-content div:nth-child(4) {
+    grid-area: why;
+}
+.session-content div:nth-child(5) {
+    grid-area: underwater ;
+}
+.box {
+    max-width: 1600px;
+}
+.review {
+    display: flex;
+    justify-content: space-around;
+}
+.review div {
+    width: 30%;
+    color: #fff;
+    border-radius: 10px;
+    background: #018ABE;
+    text-align: left;
+    transition: filter 1s ease;
+    user-select: none;
+    filter: brightness(30%);
+}
+.review .center {
+    filter: brightness(100%);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #018ABE;
+}
+.review p,.review h2 {
+    margin: 25px;
+}
+.review div h2 {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 140%;
+}
+.review div p {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    width: 90%;
+    margin: 25px auto;
+}
+/* .review div:hover {
+    filter: brightness(100%);
+    
+} */
+.scroll {
+    padding-top: 70px;
+    user-select: none;
+}
+.scroll img {
+    margin: 0 7px;
+    cursor: pointer;
+}
+.services {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    text-align: left;
+    align-items: center;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+}
+.services h1 {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+.services p {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    opacity: 0.7;
+    line-height: 140%;
+    max-width: 460px;
+}
+.price {
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.price p img {
+    margin-right: 20px;
+}
+.price p {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: left;
+    margin: 30px 0;
+    width: 400px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.price h2 {
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
+}
+.price p:hover {
+    padding-bottom: 9px;
+    border-bottom: 1px solid #fff;
+}
+.footer {
+    display: flex;
+    padding: 150px 0;
+    flex-wrap: wrap;
+}
+.footer iframe {
+    width: 70%;
+    border-radius: 10px;
+    height: auto;
+    margin: 25px 0;
+    margin-right: 50px;
+}
+.footer div div {
+    background: #018ABE;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+.footer div div p,.footer div div h1 {
+    padding: 25px 30px;
+    text-align: left;
+}
+.footer div div img {
+    margin-right: 25px;
+}
+.footer div h1 {
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color: #fff;
+}
+.footer div p {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #fff;
+    line-height: 135%;
+}
+.footer div div button {
+    padding: 10px 25px;
+    margin-right: 35%;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 25px;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 140%;
+    transition: transform 1s ease;
+
+}
+.footer div div button:hover {
+    color: #018ABE;
+    transform: scale(1.1);
+}
